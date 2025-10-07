@@ -80,7 +80,7 @@ ellipse2:{
 ellipse3:{
   borderRadius:100, 
   borderWidth:2, 
-  borderColor:'blue',
+  borderColor:'brown',
   height:25,
   width:25,
   backgroundColor:'rgb(66, 225, 220)',
