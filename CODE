@@ -1,0 +1,93 @@
+import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+
+const App = () => {
+  return (
+    <ImageBackground source={require('../my-app/assets/images/BANGGUYS.webp')} style={sty.bg}>
+    <View style={style.container}>
+        
+        <View style={{flexDirection:'row'}}>
+          <View style={style.ellipse}></View>
+          <View style={style.ellipse2}></View>
+          <View style={style.ellipse3}></View>
+
+        </View>
+
+        <View style={style.box3}>
+          <Text style={{fontSize:30, color:'blue'}}>Next</Text>
+        </View>
+
+
+    </View>
+    </ImageBackground>
+
+  )
+}
+
+export default App
+
+const style = StyleSheet.create({
+
+
+container:{
+flex:1,
+justifyContent:'flex-end',
+alignItems:'center'
+},
+
+
+box3:{
+
+  borderRadius:100, 
+  borderWidth:2, 
+  borderColor:'blue',
+  height:70, 
+  width:'75%', 
+  justifyContent:'center', 
+  alignItems:'center', 
+  backgroundColor:'rgb(66, 225, 220)',
+  marginBottom: 20
+
+},
+
+bg: {
+height:'100%',
+width:'100%',
+resizeMode:'cover'
+},
+
+ellipse:{
+  borderRadius:100, 
+  borderWidth:2, 
+  borderColor:'blue',
+  height:25,
+  width:25,
+  backgroundColor:'rgb(205, 222, 15)',
+  marginBottom:15,
+
+},
+ellipse2:{
+  borderRadius:100, 
+  borderWidth:2, 
+  borderColor:'blue',
+  height:25,
+  width:25,
+  backgroundColor:'rgb(66, 225, 220)',
+  marginInline:25,
+  marginBottom:15,
+},
+ellipse3:{
+  borderRadius:100, 
+  borderWidth:2, 
+  borderColor:'blue',
+  height:25,
+  width:25,
+  backgroundColor:'rgb(66, 225, 220)',
+  marginBottom:15,
+},
+
+
+
+
+})
